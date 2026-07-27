@@ -3,33 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meraki Weddings | Wedding Sound & Audio Rental in the Tri-Cities, WA</title>
+
+    <!--
+      This is a fallback shell only. Every route sets its own title, meta
+      description, canonical, Open Graph, and Twitter tags via
+      src/components/SEO.tsx (react-helmet-async) once React mounts.
+      Non-JS crawlers (social link-unfurl bots) will see only these fallback
+      values — see SEO-AUDIT.md Section 0 for that documented tradeoff.
+    -->
+    <title>Meraki Weddings | Wedding Ceremony Audio Without a DJ | Tri-Cities, WA</title>
     <meta
       name="description"
-      content="Professional wedding sound and audio equipment rental serving Richland, Kennewick, Pasco and the greater Tri-Cities, WA area. Ceremony mics, reception speakers, and day-of audio support for weddings of every size — plus delivery beyond the Tri-Cities."
-    />
-    <meta
-      name="keywords"
-      content="wedding sound Tri-Cities, wedding audio rental Richland WA, wedding PA system Kennewick, wedding microphone rental Pasco, ceremony sound system, reception speaker rental, wedding DJ alternative Tri-Cities"
+      content="Professional wedding ceremony audio in the Tri-Cities, WA for couples without a DJ. Microphones, speakers, and ceremony music playback from the team at Meraki Audio."
     />
     <link rel="canonical" href="https://weddings.merakiaud.com/" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Meraki Weddings | Wedding Sound & Audio Rental in the Tri-Cities, WA" />
+    <meta property="og:title" content="Meraki Weddings | Wedding Ceremony Audio Without a DJ" />
     <meta
       property="og:description"
-      content="Ceremony to last dance — professional wedding sound and audio rental for couples in Richland, Kennewick, Pasco and beyond."
+      content="Professional wedding ceremony audio in the Tri-Cities, WA for couples without a DJ — microphones, speakers, and ceremony music playback."
     />
     <meta property="og:url" content="https://weddings.merakiaud.com/" />
     <meta property="og:site_name" content="Meraki Weddings" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Meraki Weddings | Wedding Sound & Audio Rental in the Tri-Cities, WA" />
+    <meta name="twitter:title" content="Meraki Weddings | Wedding Ceremony Audio Without a DJ" />
     <meta
       name="twitter:description"
-      content="Ceremony to last dance — professional wedding sound and audio rental for couples in Richland, Kennewick, Pasco and beyond."
+      content="Professional wedding ceremony audio in the Tri-Cities, WA for couples without a DJ."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,19 +41,45 @@
       rel="stylesheet"
     />
 
+    <!--
+      Site-wide structured data only (doesn't change per route).
+      Meraki Weddings is modeled as a Service offered by the Meraki Audio
+      Organization, not as a separate/unrelated business entity — see
+      CROSS-SITE-SEO-PLAN.md for the reasoning.
+    -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Meraki Weddings",
-        "description": "Wedding sound and audio equipment rental serving the Tri-Cities, WA (Richland, Kennewick, Pasco) and beyond.",
-        "url": "https://weddings.merakiaud.com/",
-        "areaServed": ["Richland WA", "Kennewick WA", "Pasco WA", "Tri-Cities WA"],
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Meraki Audio",
-          "url": "https://merakiaud.com/"
+        "@type": "Organization",
+        "name": "Meraki Audio",
+        "url": "https://merakiaud.com/",
+        "areaServed": [
+          "Richland WA",
+          "Kennewick WA",
+          "Pasco WA",
+          "Benton City WA",
+          "Prosser WA",
+          "Walla Walla WA",
+          "Tri-Cities WA"
+        ],
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Meraki Weddings",
+            "serviceType": "Wedding ceremony audio",
+            "url": "https://weddings.merakiaud.com/",
+            "description": "Wedding ceremony audio for couples without a DJ: microphones, speakers, and ceremony music playback."
+          }
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Meraki Weddings",
+        "url": "https://weddings.merakiaud.com/"
       }
     </script>
   </head>
