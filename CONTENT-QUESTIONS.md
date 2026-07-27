@@ -1,44 +1,57 @@
-# CONTENT-QUESTIONS.md — Open questions for B / the business owner
+# CONTENT-QUESTIONS.md — Resolved
 
-Every placeholder below appears verbatim somewhere on the live site or in these docs, tagged
-`[BUSINESS CONFIRMATION NEEDED: ...]`. Nothing was fabricated to fill these gaps. Answer what you
-can, and I'll fold the answers straight into copy.
+B answered all 22 open questions on 2026-07-27. Answers are now live in the site copy (Home,
+WeddingCeremonyAudio, OutdoorWeddingAudio, Packages, HowItWorks, FAQ, Contact, Footer,
+QualifierGate, PrivacyPolicy, Terms) and in `src/lib/siteConfig.ts` (`BUSINESS_INFO`). Kept here
+for reference.
 
-## Service inclusions
-1. Are two microphones always included, or does it vary by package?
-2. What microphone types are used (handheld, lapel/lav, headset)?
-3. Are speakers included in every booking, or are there tiers?
-4. Is ceremony music playback included by default, or an add-on?
-5. Does Meraki control processional and recessional cues directly, or hand off a cue sheet?
-6. Is a technician present throughout the entire ceremony, or is it drop-off/monitor-remotely?
-7. Is rehearsal attendance available (included, add-on, or not offered)?
+## Service inclusions — resolved
+1. Two wired microphones always included; more/wireless mics available for a fee.
+2. Microphone type: handheld.
+3. Two speakers with stands included in every booking.
+4. Ceremony music playback included by default; template playlists available if the couple
+   doesn't provide their own.
+5. Cues run directly by an on-site operator — contingent on the couple providing a detailed
+   order of events / cue sheet.
+6. An operator is present for the full booking, and can extend to rehearsal and reception.
+7. Rehearsal attendance available, billed at day-rate pricing.
 
-## Scope & logistics
-8. What is the maximum guest count you can comfortably support?
-9. What is the normal service radius from Richland before travel fees apply?
-10. Are indoor and outdoor weddings priced differently?
-11. Is power required at the venue, or is battery-powered equipment available?
-12. What happens in bad weather (rain, extreme heat, last-minute venue changes)?
+## Scope & logistics — resolved
+8. Max guest count: 300 direct; larger events routed through Meraki Audio.
+9. Service radius: 30 miles of the Tri-Cities.
+10. Indoor/outdoor pricing: no difference.
+11. Power required — minimum two dedicated 120V outlets. No battery-powered option.
+12. Weather/last-minute changes: best effort to still deliver; travel fee may apply if the venue
+    moves outside the 30-mile service area.
 
-## Adjacent services
-13. Is reception audio ever available as an add-on?
-14. Are speeches or cocktail-hour audio ever available, or is this strictly ceremony-only?
+## Adjacent services — resolved
+13. Reception audio: included in the day rate (not a separate charge) as long as it's part of the
+    provided order of events. Subwoofers for dance-floor bass are the one add-on charge.
+14. Speeches/cocktail-hour audio: included under the same day-rate/order-of-events condition.
 
-## Commercial terms
-15. Are package prices meant to become public on the site, or stay quote-only?
-16. Is a deposit required to book a date?
-17. What is the cancellation/rescheduling policy?
-18. What is the actual expected response time to an inquiry (used on the Contact page — currently reads "usually within one business day" as a placeholder assumption, not a confirmed fact)?
+## Commercial terms — resolved
+15. Pricing stays quote-only, not published.
+16. Deposit: 20% to hold a date.
+17. Cancellation: 45+ days notice refunds the deposit; inside 45 days, deposit is forfeited.
+18. Response time: 2 business days.
 
-## Cross-site / brand
-19. What is the correct portfolio URL on merakiaud.com for the "View the Meraki Audio Portfolio" CTA? (Currently linking to `https://merakiaud.com/portfolio` — confirm this is the right path.)
-20. Public phone number and email for the wedding service, if different from the main Meraki Audio contact info.
+## Cross-site / brand — resolved
+19. Portfolio CTA confirmed correct at `merakiaud.com/portfolio`.
+20. Phone (509) 778-6151 — same as Meraki Audio. Email: weddings@merakiaud.com (wedding-specific).
 
-## Analytics & tracking
-21. Is there an existing Google Analytics 4 property to use, or should a new one be created for weddings.merakiaud.com specifically?
+## Legal — resolved
+22. Real Privacy Policy and Terms of Service copy written and published, reflecting the deposit,
+    cancellation, service-area, and power-requirement answers above. Both pages still carry a
+    plain-language note recommending attorney review before treating them as final/binding —
+    that's a standard caution, not a placeholder gap.
 
-## Legal
-22. Privacy Policy and Terms of Service pages are currently placeholder text only (`src/pages/PrivacyPolicy.tsx`, `src/pages/Terms.tsx`). These need real, reviewed language before launch — ideally reflecting the actual deposit/cancellation/weather policy answered above.
+## Still open
+21. **Analytics:** B confirmed a **new** GA4 property should be created specifically for
+    weddings.merakiaud.com (not reusing an existing one). The property itself hasn't been created
+    yet — `src/lib/analytics.ts` and `siteConfig.ts` are already wired to accept a measurement ID
+    the moment one exists; just say the word and I can walk through creating it (or you can hand
+    me the ID once you've made it).
 
-## Editorial note
-- **Testimonials:** the brief's homepage structure includes a testimonials section. No real testimonials exist yet, so this section was intentionally **left off** the live homepage rather than shown with fake or placeholder-visible content. Add a real testimonials section once at least a few genuine ones exist — happy to build it in at that point.
+## Editorial note (unchanged)
+- **Testimonials:** still intentionally left off the homepage — no real testimonials exist yet.
+  Add once they do.
