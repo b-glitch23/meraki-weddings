@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { absoluteUrl } from "../lib/siteConfig";
-import JsonLd from "./JsonLd";
 
 export type Crumb = { name: string; path: string };
 
@@ -25,7 +24,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <>
       <Helmet>
-        <JsonLd data={jsonLd} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <nav aria-label="breadcrumb" className="max-w-6xl mx-auto px-6 pt-6 pb-2">
         <ol className="flex flex-wrap items-center gap-1.5 text-xs text-charcoal/50">

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SEO from "./SEO";
-import JsonLd from "./JsonLd";
 import Breadcrumbs from "./Breadcrumbs";
 import { absoluteUrl } from "../lib/siteConfig";
 import { trackPrimaryCTA } from "../lib/analytics";
@@ -47,9 +46,7 @@ export default function ArticleLayout({
 
   return (
     <>
-      <SEO title={title} description={description} path={path}>
-        <JsonLd data={articleJsonLd} />
-      </SEO>
+      <SEO title={title} description={description} path={path} jsonLd={[articleJsonLd]} />
       <Breadcrumbs
         items={[
           { name: "Home", path: "/" },

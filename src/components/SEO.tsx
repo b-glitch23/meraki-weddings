@@ -5,7 +5,16 @@ type SEOProps = {
   title: string;
   description: string;
   path: string;
-  children?: React.ReactNode;
+  /**
+   * One or more JSON-LD objects to render as <script type="application/ld+json">
+   * tags. IMPORTANT: react-helmet-async only recognizes literal tag elements
+   * (title/meta/link/script/etc.) as children of <Helmet> — passing a custom
+   * React component (even one that renders a <script> tag) throws
+   * "attempting to nest <Helmet> components" at runtime. So JSON-LD is passed
+   * as plain data here and rendered as a literal <script> tag below, not via
+   * a wrapper component.
+   */
+  jsonLd?: Record<string, unknown>[];
 };
 
 /**
@@ -17,7 +26,7 @@ type SEOProps = {
  * executes JS and indexes this correctly, but non-JS social crawlers will
  * only see the static fallback tags in index.html, not these per-page values.
  */
-export default function SEO({ title, description, path, children }: SEOProps) {
+export default function SEO({ title, description, path, jsonLd }: SEOProps) {
   const url = absoluteUrl(path);
 
   return (
@@ -36,7 +45,11 @@ export default function SEO({ title, description, path, children }: SEOProps) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
 
-      {children}
+      {jsonLd?.map((data, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(data)}
+        </script>
+      ))}
     </Helmet>
   );
 }
