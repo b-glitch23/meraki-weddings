@@ -79,14 +79,11 @@ export default function WeddingCeremonyAudio() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-2xl text-charcoal mb-4">What May Be Included</h2>
           <p className="text-charcoal/70 leading-relaxed mb-4">
-            A typical setup may include a microphone for the officiant, a microphone for the
-            couple or readers, ceremony-appropriate speakers, music playback, setup and teardown,
-            and a sound check before guests arrive.
-          </p>
-          <p className="text-charcoal/60 text-sm leading-relaxed">
-            [BUSINESS CONFIRMATION NEEDED: exact standard inclusions per package, whether a
-            technician stays on-site for the full ceremony, and whether rehearsal attendance is
-            offered — see CONTENT-QUESTIONS.md]
+            Every booking includes two wired handheld microphones, two speakers with stands,
+            ceremony music playback (template playlists available if you don't have your own),
+            setup and teardown, and an on-site operator running sound throughout — not just
+            dropped-off equipment. Additional microphones, wireless mics, and rehearsal
+            attendance are all available, billed at our day rate.
           </p>
           <Link to="/packages/" className="inline-block mt-4 underline text-charcoal/70 hover:text-rose">
             See package options
@@ -147,17 +144,18 @@ export default function WeddingCeremonyAudio() {
               <li>• Equipment setup and teardown</li>
               <li>• Sound check before your ceremony</li>
               <li>• Audio level management</li>
-              <li>• Ceremony music cues</li>
-              <li>• On-site troubleshooting</li>
+              <li>• Processional, recessional, and other music cues — as long as you provide the order of events and playlist</li>
+              <li>• On-site troubleshooting, with an operator present for the full booking</li>
+              <li>• Speeches, cocktail-hour, and reception audio reinforcement, included in the day rate when part of your provided order of events</li>
             </ul>
           </div>
           <div>
             <h2 className="font-display text-2xl text-charcoal mb-4">What Meraki Does Not Provide</h2>
             <ul className="space-y-2 text-charcoal/70">
-              <li>• DJ services or reception entertainment</li>
-              <li>• Emceeing or announcements beyond ceremony cues</li>
+              <li>• DJ entertainment — emceeing, reading the room, or live song selection</li>
               <li>• Dance-floor lighting</li>
-              <li>• Music selection or curation as a DJ would</li>
+              <li>• Music curation — you provide the playlist and order of events</li>
+              <li>• Subwoofers / dance-floor bass by default — available as an add-on</li>
             </ul>
           </div>
         </div>
@@ -180,8 +178,10 @@ export default function WeddingCeremonyAudio() {
         <div className="max-w-2xl mx-auto">
           <h2 className="font-display text-2xl text-charcoal mb-4">Service Area</h2>
           <p className="text-charcoal/70 leading-relaxed mb-6">
-            Based in Richland, WA and serving weddings in Kennewick, Pasco, Benton City, Prosser,
-            Walla Walla, and surrounding Eastern Washington communities.
+            Based in Richland, WA and serving weddings within 30 miles of the Tri-Cities —
+            Kennewick, Pasco, Benton City, Prosser, and surrounding Eastern Washington
+            communities. Weddings up to 300 guests are supported directly; larger events can be
+            arranged through Meraki Audio.
           </p>
           <p className="text-charcoal/60 text-sm">
             Curious about the broader work behind Meraki Weddings?{" "}

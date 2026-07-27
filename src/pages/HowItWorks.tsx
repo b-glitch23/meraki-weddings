@@ -14,7 +14,7 @@ const steps = [
   },
   {
     title: "Rehearsal Considerations",
-    copy: "[BUSINESS CONFIRMATION NEEDED: whether rehearsal attendance is offered or available as an add-on]",
+    copy: "Want us there for the rehearsal too? It's available as an add-on, billed at our day rate.",
   },
   {
     title: "Ceremony Day",

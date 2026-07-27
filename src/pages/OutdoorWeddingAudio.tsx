@@ -50,11 +50,11 @@ export default function OutdoorWeddingAudio() {
 
       <section className="px-6 py-14 bg-blush/25">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-2xl text-charcoal mb-4">Power & Battery Considerations</h2>
+          <h2 className="font-display text-2xl text-charcoal mb-4">Power Considerations</h2>
           <p className="text-charcoal/70 leading-relaxed">
-            Outdoor venues don't always have convenient power access.{" "}
-            [BUSINESS CONFIRMATION NEEDED: whether battery-powered equipment is available for
-            venues without accessible power]
+            Our equipment requires standard power at the venue — a minimum of two dedicated 120V
+            outlets. If your outdoor space doesn't have power nearby, let us know when you inquire
+            so we can plan around it.
           </p>
         </div>
       </section>
@@ -74,8 +74,13 @@ export default function OutdoorWeddingAudio() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-2xl text-charcoal mb-4">Weather Considerations</h2>
           <p className="text-charcoal/70 leading-relaxed">
-            [BUSINESS CONFIRMATION NEEDED: policy for rain, extreme heat, or venue changes due to
-            weather]
+            We'll do everything we can to make your outdoor ceremony happen as planned. If weather
+            forces a last-minute move to a backup location outside our normal service area, a
+            travel fee may apply — see our{" "}
+            <Link to="/terms/" className="underline hover:text-rose">
+              terms
+            </Link>{" "}
+            for details.
           </p>
         </div>
       </section>
@@ -83,8 +88,8 @@ export default function OutdoorWeddingAudio() {
       <section className="px-6 py-14 text-center">
         <h2 className="font-display text-2xl text-charcoal mb-3">Service Area</h2>
         <p className="text-charcoal/70 leading-relaxed max-w-xl mx-auto">
-          Based in Richland, WA and serving outdoor weddings throughout Kennewick, Pasco, Benton
-          City, Prosser, Walla Walla, and surrounding Eastern Washington communities.
+          Based in Richland, WA and serving outdoor weddings within 30 miles of the Tri-Cities —
+          Kennewick, Pasco, Benton City, Prosser, and surrounding Eastern Washington communities.
         </p>
       </section>
 

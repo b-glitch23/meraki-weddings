@@ -86,9 +86,11 @@ export default function WeddingAudioWithoutDJ() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-2xl text-charcoal mb-4">Where Meraki Doesn't Fit In</h2>
           <p className="text-charcoal/70 leading-relaxed">
-            If you're looking for a full wedding DJ — reception music, emceeing, dance-floor
-            entertainment, or announcements throughout the night — Meraki Weddings isn't built for
-            that, and we'd rather tell you that upfront than take on the wrong job.
+            We can run sound for speeches, cocktail hour, and reception through the same booking —
+            as long as you provide the order of events and your playlist. What we don't do is DJ
+            entertainment: reading the room, taking live song requests, or emceeing the night. If
+            that's what you need, Meraki Weddings isn't built for it, and we'd rather tell you that
+            upfront than take on the wrong job.
           </p>
         </div>
       </section>

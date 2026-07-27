@@ -7,15 +7,18 @@ import { trackPrimaryCTA, trackPackagesPageView } from "../lib/analytics";
 const packages = [
   {
     name: "Ceremony Essentials",
-    forWho: "Designed for couples who need a straightforward ceremony setup with microphones, speakers, and music playback.",
+    forWho:
+      "Designed for couples who need a straightforward ceremony setup: two wired microphones, two speakers with stands, and ceremony music playback, run by an on-site operator.",
   },
   {
     name: "Outdoor Ceremony Audio",
-    forWho: "Designed for outdoor spaces where sound coverage, wind, layout, and power need additional consideration.",
+    forWho:
+      "The same essentials, planned around your outdoor space — wind, layout, distance, and power all factored in. Requires two dedicated 120V outlets at the venue.",
   },
   {
     name: "Custom Ceremony Setup",
-    forWho: "Designed for ceremonies with live musicians, multiple readers, unusual venue layouts, or additional audio needs.",
+    forWho:
+      "For live musicians, multiple readers, extra wireless microphones, subwoofers for dance-floor bass, rehearsal attendance, or full-day coverage through speeches and reception.",
   },
 ];
 
@@ -52,7 +55,7 @@ export default function Packages() {
               <h2 className="font-display text-xl text-charcoal mb-3">{pkg.name}</h2>
               <p className="text-charcoal/70 leading-relaxed flex-1">{pkg.forWho}</p>
               <p className="text-charcoal/40 text-xs mt-4">
-                [BUSINESS CONFIRMATION NEEDED: exact inclusions and pricing for this package]
+                Priced by quote — check your date to get exact numbers for your ceremony.
               </p>
             </div>
           ))}
@@ -62,19 +65,22 @@ export default function Packages() {
       <section className="px-6 py-14 bg-blush/25">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-2xl text-charcoal mb-4">
-            What's Confirmed vs. What to Ask About
+            What's Included, What's a Quote
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-3">
-            Confirmed: every package centers on ceremony microphones, appropriate speakers, and
-            ceremony music playback, with setup and teardown handled for you.
+            Every booking includes two wired microphones, two speakers with stands, ceremony
+            music playback, and an operator on-site for the full booking — billed at our day
+            rate, which covers ceremony through reception if your order of events calls for it.
+            Rehearsal attendance, extra or wireless microphones, and subwoofers for dance-floor
+            bass are all available as add-ons.
           </p>
           <p className="text-charcoal/70 leading-relaxed">
-            Not yet public: exact pricing, guest-count limits, and package-by-package inclusions.
-            These are confirmed directly when you check your date — see{" "}
+            Exact pricing stays quote-only — every ceremony is a little different. A 20% deposit
+            holds your date once you're ready to book. See{" "}
             <Link to="/faq/" className="underline hover:text-rose">
               the FAQ
             </Link>{" "}
-            for common questions couples ask before booking.
+            for deposit, cancellation, and other common questions.
           </p>
         </div>
       </section>

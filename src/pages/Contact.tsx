@@ -18,8 +18,8 @@ export default function Contact() {
             Check Your Wedding Date
           </h1>
           <p className="text-charcoal/70 leading-relaxed">
-            Tell us about your ceremony and we'll follow up with availability — usually within
-            one business day. [BUSINESS CONFIRMATION NEEDED: actual expected response time]
+            Tell us about your ceremony and we'll follow up with availability within 2 business
+            days.
           </p>
         </div>
       </section>

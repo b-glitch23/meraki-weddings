@@ -26,16 +26,16 @@ const included = [
   {
     title: "Microphones",
     copy:
-      "Typically one microphone for the officiant and one for the couple, readers, or musicians. [BUSINESS CONFIRMATION NEEDED: whether two microphones is the standard setup for every booking, or varies by package]",
+      "Every booking includes two wired handheld microphones — one for the officiant, one for the couple, readers, or musicians. Additional microphones and wireless options are available for an added fee.",
   },
   {
     title: "Speakers",
-    copy:
-      "Sized to your ceremony space — [BUSINESS CONFIRMATION NEEDED: specific equipment/brands used, if this should be shared publicly].",
+    copy: "Two speakers and stands are included with every booking, sized and placed for your ceremony space.",
   },
   {
     title: "Ceremony Music Playback",
-    copy: "Processional, recessional, and any interlude music cued at the right moments.",
+    copy:
+      "Processional, recessional, and any interlude music cued at the right moments by an on-site operator. We have template playlists on hand if you don't have your own ready.",
   },
   {
     title: "Setup & Teardown",
@@ -289,8 +289,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-2xl text-charcoal mb-3">Service Area</h2>
           <p className="text-charcoal/70 leading-relaxed">
-            Based in Richland, WA and serving weddings in Kennewick, Pasco, Benton City, Prosser,
-            Walla Walla, and surrounding Eastern Washington communities.
+            Based in Richland, WA and serving weddings within 30 miles of the Tri-Cities —
+            including Kennewick, Pasco, Benton City, Prosser, and surrounding Eastern Washington
+            communities. Venues outside that radius may be possible with an added travel fee —
+            just ask.
           </p>
         </div>
       </section>

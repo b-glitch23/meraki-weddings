@@ -22,35 +22,35 @@ const faqs = [
   },
   {
     q: "Is a technician present throughout the ceremony?",
-    a: "[BUSINESS CONFIRMATION NEEDED: whether an audio technician remains on-site for the entire ceremony]",
+    a: "Yes. An operator is on-site running sound for your entire booking — not just dropping off equipment. If needed, that can extend to your rehearsal and reception too.",
   },
   {
     q: "Is rehearsal attendance available?",
-    a: "[BUSINESS CONFIRMATION NEEDED: whether rehearsal attendance is offered or available as an add-on]",
+    a: "Yes, as an add-on billed at our day rate.",
   },
   {
     q: "What is the maximum guest count you can support?",
-    a: "[BUSINESS CONFIRMATION NEEDED: guest-count limits, if any]",
+    a: "We comfortably support weddings up to 300 guests. Larger events can be arranged through Meraki Audio directly.",
   },
   {
     q: "What is your normal service radius?",
-    a: "We're based in Richland, WA and regularly serve Kennewick, Pasco, Benton City, Prosser, Walla Walla, and surrounding Eastern Washington communities. [BUSINESS CONFIRMATION NEEDED: exact service radius / travel-fee cutoff distance]",
+    a: "We're based in Richland, WA and serve weddings within 30 miles of the Tri-Cities — Kennewick, Pasco, Benton City, Prosser, and surrounding Eastern Washington communities. Venues outside that radius may be possible with an added travel fee.",
   },
   {
     q: "Are indoor and outdoor weddings priced differently?",
-    a: "[BUSINESS CONFIRMATION NEEDED: whether pricing differs by venue type]",
+    a: "No — pricing is the same regardless of venue type.",
   },
   {
     q: "Is power required, or is battery-powered equipment available?",
-    a: "[BUSINESS CONFIRMATION NEEDED: whether battery-powered equipment is available for venues without accessible power]",
+    a: "Power is required at the venue — a minimum of two dedicated 120V outlets. We don't currently offer battery-powered equipment.",
   },
   {
     q: "What happens in bad weather?",
-    a: "[BUSINESS CONFIRMATION NEEDED: policy for rain, extreme heat, or last-minute venue changes]",
+    a: "We'll do everything we can to make your event happen as planned. If a last-minute move takes the venue outside our normal service area, a travel fee may apply.",
   },
   {
     q: "Is reception audio, speeches, or cocktail-hour audio ever available?",
-    a: "[BUSINESS CONFIRMATION NEEDED: whether any reception-adjacent audio is available, or whether the service is strictly ceremony-only]",
+    a: "Yes — it's included in the day rate as long as it's part of the order of events and playlist you provide. Subwoofers for dance-floor bass are the one add-on charge for reception.",
   },
   {
     q: "Are package prices public?",
@@ -58,11 +58,11 @@ const faqs = [
   },
   {
     q: "Is a deposit required?",
-    a: "[BUSINESS CONFIRMATION NEEDED: deposit policy]",
+    a: "Yes, a 20% deposit holds your date.",
   },
   {
     q: "What is the cancellation policy?",
-    a: "[BUSINESS CONFIRMATION NEEDED: cancellation policy]",
+    a: "Cancel or reschedule more than 45 days before your date and your deposit is refunded. Inside 45 days, the deposit is non-refundable.",
   },
 ];
 
