@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import JsonLd from "../components/JsonLd";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { trackPrimaryCTA, trackPortfolioLinkClick } from "../lib/analytics";
 import { MERAKIAUD_URL, absoluteUrl } from "../lib/siteConfig";
@@ -24,9 +23,8 @@ export default function WeddingCeremonyAudio() {
         title="Wedding Ceremony Sound & Microphones | Tri-Cities WA"
         description="Ceremony microphones, speakers, and music playback for weddings without a DJ. Serving Richland, Kennewick, Pasco, and the Tri-Cities, WA."
         path="/wedding-ceremony-audio/"
-      >
-        <JsonLd data={serviceJsonLd} />
-      </SEO>
+        jsonLd={[serviceJsonLd]}
+      />
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Wedding Ceremony Audio", path: "/wedding-ceremony-audio/" }]} />
 
       <section className="px-6 pt-10 pb-16">

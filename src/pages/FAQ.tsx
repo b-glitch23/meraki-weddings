@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import JsonLd from "../components/JsonLd";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { trackPrimaryCTA } from "../lib/analytics";
 
@@ -86,9 +85,8 @@ export default function FAQ() {
         title="Wedding Ceremony Audio FAQ | Meraki Weddings"
         description="Common questions about wedding ceremony microphones, speakers, music playback, outdoor setups, and whether you need a DJ at all."
         path="/faq/"
-      >
-        <JsonLd data={faqJsonLd} />
-      </SEO>
+        jsonLd={[faqJsonLd]}
+      />
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "FAQ", path: "/faq/" }]} />
 
       <section className="px-6 pt-10 pb-16 text-center">

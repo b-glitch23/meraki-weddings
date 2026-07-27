@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import JsonLd from "../components/JsonLd";
 import { MERAKIAUD_PORTFOLIO_URL } from "../lib/siteConfig";
 import { trackPrimaryCTA, trackSecondaryCTA, trackPortfolioLinkClick } from "../lib/analytics";
 
@@ -83,9 +82,8 @@ export default function Home() {
         title="Wedding Ceremony Audio Without a DJ | Tri-Cities WA"
         description="Professional wedding ceremony audio in the Tri-Cities for couples without a DJ. Microphones, speakers, music playback, setup, and reliable support."
         path="/"
-      >
-        <JsonLd data={faqJsonLd} />
-      </SEO>
+        jsonLd={[faqJsonLd]}
+      />
 
       {/* Hero */}
       <section className="pt-20 pb-24 px-6 bg-gradient-to-b from-blush/40 to-cream">
