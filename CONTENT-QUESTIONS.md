@@ -45,12 +45,13 @@ for reference.
     plain-language note recommending attorney review before treating them as final/binding —
     that's a standard caution, not a placeholder gap.
 
+21. **Analytics:** resolved 2026-07-27 — new GA4 property "Meraki Weddings" (separate from the
+    merakiaud.com property) created under the existing Meraki Analytics account. Measurement ID
+    G-VFZ04LZBTN is live in `index.html`'s gtag.js loader and referenced in `siteConfig.ts`. All
+    `trackX()` helpers in `analytics.ts` now fire real events — no code changes needed for that.
+
 ## Still open
-21. **Analytics:** B confirmed a **new** GA4 property should be created specifically for
-    weddings.merakiaud.com (not reusing an existing one). The property itself hasn't been created
-    yet — `src/lib/analytics.ts` and `siteConfig.ts` are already wired to accept a measurement ID
-    the moment one exists; just say the word and I can walk through creating it (or you can hand
-    me the ID once you've made it).
+- None. All 22 items are resolved.
 
 ## Editorial note (unchanged)
 - **Testimonials:** still intentionally left off the homepage — no real testimonials exist yet.

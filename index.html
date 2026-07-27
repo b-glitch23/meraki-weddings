@@ -42,6 +42,21 @@
     />
 
     <!--
+      Google Analytics 4 (Meraki Weddings property, created 2026-07-27).
+      Loaded directly here (not via a JS-injected tag) so it fires as early
+      as possible and doesn't depend on React having mounted. analytics.ts
+      only calls window.gtag if it exists, so this is the single place that
+      turns tracking "on" for the whole site.
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFZ04LZBTN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VFZ04LZBTN');
+    </script>
+
+    <!--
       Site-wide structured data only (doesn't change per route).
       Meraki Weddings is modeled as a Service offered by the Meraki Audio
       Organization, not as a separate/unrelated business entity — see
