@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #faf6f0;
+  color: #3a2e2a;
+}
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
