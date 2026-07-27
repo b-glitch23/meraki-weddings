@@ -24,8 +24,11 @@ export const BUSINESS_INFO = {
   depositPercent: 20,
   cancellationNoticeDays: 45,
   responseTimeBusinessDays: 2,
-  // Still open — see CONTENT-QUESTIONS.md item 21.
-  gaMeasurementId: "[BUSINESS CONFIRMATION NEEDED: Google Analytics 4 measurement ID — new GA4 property to be created]",
+  // GA4 property "Meraki Weddings" created 2026-07-27, separate from the
+  // merakiaud.com main-site property. The actual gtag.js loader lives in
+  // index.html (loads earliest, no React-mount dependency) — this value is
+  // kept here for reference/debugging only, not read by any tracking code.
+  gaMeasurementId: "G-VFZ04LZBTN",
 };
 
 export function absoluteUrl(path: string): string {
