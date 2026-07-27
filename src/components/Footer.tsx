@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { MERAKIAUD_URL } from "../lib/siteConfig";
-import { trackPortfolioLinkClick } from "../lib/analytics";
+import { MERAKIAUD_URL, BUSINESS_INFO } from "../lib/siteConfig";
+import { trackPortfolioLinkClick, trackPhoneClick, trackEmailClick } from "../lib/analytics";
 
 const columns = [
   {
@@ -50,8 +50,24 @@ export default function Footer() {
             — a focused wedding service, not a full DJ or production company.
           </p>
           <p className="text-charcoal/50 text-sm mt-3">
-            Based in Richland, WA — serving Kennewick, Pasco, Benton City, Prosser, Walla Walla,
-            and surrounding Eastern Washington communities.
+            Based in Richland, WA — serving weddings within 30 miles of the Tri-Cities.
+          </p>
+          <p className="text-charcoal/50 text-sm mt-3">
+            <a
+              href={BUSINESS_INFO.phoneHref}
+              onClick={() => trackPhoneClick()}
+              className="hover:text-rose"
+            >
+              {BUSINESS_INFO.phone}
+            </a>
+            {" · "}
+            <a
+              href={BUSINESS_INFO.emailHref}
+              onClick={() => trackEmailClick()}
+              className="hover:text-rose"
+            >
+              {BUSINESS_INFO.email}
+            </a>
           </p>
         </div>
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import BookingForm from "./BookingForm";
-import { trackFormStart } from "../lib/analytics";
-import { MERAKIAUD_URL } from "../lib/siteConfig";
+import { trackFormStart, trackPhoneClick, trackEmailClick } from "../lib/analytics";
+import { MERAKIAUD_URL, BUSINESS_INFO } from "../lib/siteConfig";
 
 type Option = {
   value: string;
@@ -102,12 +102,27 @@ export default function QualifierGate() {
       )}
 
       <p className="text-center text-charcoal/40 text-xs mt-6">
-        Prefer to reach us another way?{" "}
+        Prefer to reach us another way? Call{" "}
+        <a
+          href={BUSINESS_INFO.phoneHref}
+          onClick={() => trackPhoneClick()}
+          className="underline hover:text-rose"
+        >
+          {BUSINESS_INFO.phone}
+        </a>{" "}
+        or email{" "}
+        <a
+          href={BUSINESS_INFO.emailHref}
+          onClick={() => trackEmailClick()}
+          className="underline hover:text-rose"
+        >
+          {BUSINESS_INFO.email}
+        </a>
+        , or{" "}
         <Link to="/faq/" className="underline hover:text-rose">
-          Check the FAQ
+          check the FAQ
         </Link>{" "}
-        first, or send details directly — contact information is confirmed with the business
-        owner before publishing.
+        first.
       </p>
     </div>
   );
