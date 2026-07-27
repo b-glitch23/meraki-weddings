@@ -12,14 +12,20 @@ export const HIGHLEVEL_FORM_ID = "8leVfMi2URk4EUlQbmdQ";
 export const HIGHLEVEL_FORM_EMBED_SRC = `https://api.leadconnectorhq.com/widget/form/${HIGHLEVEL_FORM_ID}`;
 export const HIGHLEVEL_EMBED_SCRIPT_SRC = "https://link.msgsndr.com/js/form_embed.js";
 
-// Business facts that have not been confirmed by the owner yet.
-// Every value below is a clearly-labeled placeholder — see CONTENT-QUESTIONS.md.
-export const BUSINESS_PLACEHOLDERS = {
-  phone: "[BUSINESS CONFIRMATION NEEDED: public phone number for the wedding service]",
-  email: "[BUSINESS CONFIRMATION NEEDED: public email address for the wedding service]",
-  serviceRadius:
-    "[BUSINESS CONFIRMATION NEEDED: standard service radius / travel-fee cutoff distance]",
-  gaMeasurementId: "[BUSINESS CONFIRMATION NEEDED: Google Analytics 4 measurement ID]",
+// Confirmed business facts (owner-verified 2026-07-27 — see CONTENT-QUESTIONS.md history).
+export const BUSINESS_INFO = {
+  phone: "(509) 778-6151",
+  phoneHref: "tel:+15097786151",
+  email: "weddings@merakiaud.com",
+  emailHref: "mailto:weddings@merakiaud.com",
+  serviceRadiusMiles: 30,
+  serviceRadiusNote: "within 30 miles of the Tri-Cities",
+  maxGuestCount: 300,
+  depositPercent: 20,
+  cancellationNoticeDays: 45,
+  responseTimeBusinessDays: 2,
+  // Still open — see CONTENT-QUESTIONS.md item 21.
+  gaMeasurementId: "[BUSINESS CONFIRMATION NEEDED: Google Analytics 4 measurement ID — new GA4 property to be created]",
 };
 
 export function absoluteUrl(path: string): string {
