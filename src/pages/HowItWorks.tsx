@@ -9,8 +9,8 @@ const steps = [
     copy: "Share your wedding date, venue, and a bit about your ceremony. We confirm availability and whether ceremony audio is the right fit.",
   },
   {
-    title: "Planning Your Setup",
-    copy: "We talk through your venue layout, indoor or outdoor considerations, and how many microphones your ceremony format calls for.",
+    title: "Pre-Wedding Planning Call",
+    copy: "We walk through your venue layout, indoor or outdoor considerations, your order of events, and how many microphones your ceremony format calls for — before your wedding day.",
   },
   {
     title: "Rehearsal Considerations",
