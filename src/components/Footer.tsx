@@ -50,7 +50,7 @@ export default function Footer() {
             — a focused wedding service, not a full DJ or production company.
           </p>
           <p className="text-charcoal/50 text-sm mt-3">
-            Based in Richland, WA — serving weddings within 30 miles of the Tri-Cities.
+            Based in Richland, WA — serving weddings {BUSINESS_INFO.serviceRadiusNote}.
           </p>
           <p className="text-charcoal/50 text-sm mt-3">
             <a
