@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import { MERAKIAUD_PORTFOLIO_URL } from "../lib/siteConfig";
-import { trackPrimaryCTA, trackSecondaryCTA, trackPortfolioLinkClick } from "../lib/analytics";
+import { MERAKIAUD_PORTFOLIO_URL, BUSINESS_INFO } from "../lib/siteConfig";
+import { trackPrimaryCTA, trackPortfolioLinkClick } from "../lib/analytics";
 
 const fitPoints = [
   "You are not hiring a wedding DJ.",
@@ -79,8 +79,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Wedding Ceremony Audio Without a DJ | Tri-Cities WA"
-        description="Professional wedding ceremony audio in the Tri-Cities for couples without a DJ. Microphones, speakers, music playback, setup, and reliable support."
+        title="Wedding Ceremony Audio Without a DJ | Tri-Cities & Eastern WA"
+        description="Professional wedding ceremony audio for couples without a DJ, serving the Tri-Cities and throughout Eastern Washington. Microphones, speakers, music playback, setup, and reliable support."
         path="/"
         jsonLd={[faqJsonLd]}
       />
@@ -92,11 +92,15 @@ export default function Home() {
             Wedding Ceremony Audio | Tri-Cities, Washington
           </span>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-charcoal mt-5">
-            Professional Wedding Sound Without Hiring a DJ
+            Professional Wedding Sound Without the DJ
           </h1>
-          <p className="text-lg sm:text-xl text-charcoal/70 mt-6 max-w-2xl mx-auto leading-relaxed">
-            Need microphones, speakers, and ceremony music — but not a full DJ package? Meraki
-            provides simple, professional wedding audio so your guests can hear every word.
+          <p className="text-lg sm:text-xl text-charcoal/80 mt-6 max-w-2xl mx-auto leading-relaxed font-medium">
+            Make sure every guest hears your vows, your music, and every meaningful moment.
+          </p>
+          <p className="text-base sm:text-lg text-charcoal/70 mt-4 max-w-2xl mx-auto leading-relaxed">
+            Meraki Weddings provides professional microphones, speakers, music playback, and an
+            experienced on-site audio operator for couples who want clear, reliable wedding sound
+            — without hiring a traditional DJ.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -104,19 +108,12 @@ export default function Home() {
               onClick={() => trackPrimaryCTA("home_hero")}
               className="bg-rose text-cream px-8 py-3.5 rounded-full text-sm tracking-wide hover:bg-charcoal transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
             >
-              Check Your Wedding Date
-            </Link>
-            <Link
-              to="/how-it-works/"
-              onClick={() => trackSecondaryCTA("home_hero")}
-              className="border border-charcoal/20 text-charcoal px-8 py-3.5 rounded-full text-sm tracking-wide hover:border-charcoal transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
-            >
-              See How It Works
+              Check My Date
             </Link>
           </div>
           <p className="text-charcoal/50 text-sm mt-6 max-w-xl mx-auto">
-            A straightforward audio setup for ceremonies that need approximately two microphones,
-            music playback, and professional support.
+            A professional wedding sound service from Meraki Audio, serving weddings{" "}
+            {BUSINESS_INFO.serviceRadiusNote}.
           </p>
         </div>
       </section>
@@ -151,8 +148,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The problem */}
+      {/* Outcome */}
       <section className="py-20 px-6 bg-blush/25">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-display text-3xl sm:text-4xl text-charcoal mb-5">
+            Your Ceremony Deserves to Be Heard
+          </h2>
+          <p className="text-lg text-charcoal/80 leading-relaxed max-w-2xl mx-auto font-medium">
+            Your guests came to hear you exchange vows — not strain to understand what is being
+            said.
+          </p>
+          <p className="text-charcoal/70 mt-4 leading-relaxed max-w-2xl mx-auto">
+            Outdoor acoustics, wind, distance, and quiet voices can make even an intimate ceremony
+            difficult to hear. Meraki Weddings handles the microphones, speakers, music cues, and
+            live sound adjustments so every guest can stay connected to the moment.
+          </p>
+          <p className="font-display text-xl text-charcoal mt-6">
+            You enjoy your wedding. We make sure everyone hears it.
+          </p>
+        </div>
+      </section>
+
+      {/* The problem */}
+      <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="uppercase tracking-[0.3em] text-xs text-rose font-medium">
@@ -289,10 +307,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-2xl text-charcoal mb-3">Service Area</h2>
           <p className="text-charcoal/70 leading-relaxed">
-            Based in Richland, WA and serving weddings within 30 miles of the Tri-Cities —
-            including Kennewick, Pasco, Benton City, Prosser, and surrounding Eastern Washington
-            communities. Venues outside that radius may be possible with an added travel fee —
-            just ask.
+            Based in Richland, WA and serving weddings {BUSINESS_INFO.serviceRadiusNote} —
+            including Kennewick, Pasco, Benton City, Prosser, Walla Walla, Spokane, and
+            surrounding Eastern Washington communities. Venues further out may be possible with
+            an added travel fee — just ask.
           </p>
         </div>
       </section>
@@ -319,22 +337,88 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Meraki vs. DJ vs. Rental */}
       <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="font-display text-3xl sm:text-4xl text-charcoal">
+              The Right Sound Option for Your Wedding
+            </h2>
+            <p className="text-charcoal/70 mt-4 leading-relaxed">
+              Not every wedding needs a DJ — but nearly every wedding needs dependable sound.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6 mb-10 items-stretch">
+            <div className="bg-blush/30 border-2 border-rose rounded-2xl p-6">
+              <h3 className="font-display text-lg text-charcoal mb-3">Meraki Weddings</h3>
+              <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                Best for couples who want professional ceremony and reception sound without
+                traditional DJ entertainment.
+              </p>
+              <p className="text-charcoal/70 text-sm leading-relaxed">
+                You receive professional equipment, music playback, live audio management, and an
+                experienced operator who stays on site. You provide the playlist and event plan;
+                we make sure everything is heard clearly and played at the right time.
+              </p>
+            </div>
+            <div className="bg-white/60 border border-blush/60 rounded-2xl p-6">
+              <h3 className="font-display text-lg text-charcoal mb-3">Traditional Wedding DJ</h3>
+              <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                Best for couples who want reception entertainment, live song selection, crowd
+                interaction, emceeing, announcements, games, and dance-floor management.
+              </p>
+              <p className="text-charcoal/70 text-sm leading-relaxed">
+                A DJ may also provide ceremony sound, but their primary role is usually
+                entertainment and managing the reception atmosphere.
+              </p>
+            </div>
+            <div className="bg-white/60 border border-blush/60 rounded-2xl p-6">
+              <h3 className="font-display text-lg text-charcoal mb-3">Equipment Rental</h3>
+              <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                Best for someone who already has the technical knowledge, time, and designated
+                personnel to set up, test, and operate the equipment.
+              </p>
+              <p className="text-charcoal/70 text-sm leading-relaxed">
+                A rental usually provides equipment — not planning, music cues, troubleshooting,
+                or an audio professional monitoring the event.
+              </p>
+            </div>
+          </div>
+          <div className="bg-charcoal text-cream rounded-2xl p-8 sm:p-10 text-center">
+            <p className="font-display text-xl sm:text-2xl mb-3">
+              With Meraki, You Aren't Just Renting Speakers
+            </p>
+            <p className="text-cream/70 leading-relaxed max-w-2xl mx-auto mb-7">
+              You're hiring an audio professional to manage the sound so you, your family, and
+              your friends don't have to.
+            </p>
+            <Link
+              to="/contact/"
+              onClick={() => trackPrimaryCTA("home_comparison")}
+              className="inline-block bg-champagne text-charcoal px-7 py-3 rounded-full text-sm tracking-wide hover:bg-cream transition-colors"
+            >
+              Check My Date
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-6 bg-blush/25">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-display text-3xl sm:text-4xl text-charcoal mb-4">
-            Let's Talk About Your Ceremony
+            Let's Make Sure Your Wedding Is Heard
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-8">
-            Tell us your date and venue — we'll confirm availability and whether ceremony audio is
-            the right fit for your day.
+            Tell us your date, venue, and wedding plans. We'll confirm availability and recommend
+            the right sound setup for your day.
           </p>
           <Link
             to="/contact/"
             onClick={() => trackPrimaryCTA("home_final_cta")}
             className="inline-block bg-rose text-cream px-8 py-3.5 rounded-full text-sm tracking-wide hover:bg-charcoal transition-colors"
           >
-            Check Your Wedding Date
+            Check My Date
           </Link>
         </div>
       </section>
