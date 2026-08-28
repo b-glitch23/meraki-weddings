@@ -12,14 +12,15 @@ export const HIGHLEVEL_FORM_ID = "8leVfMi2URk4EUlQbmdQ";
 export const HIGHLEVEL_FORM_EMBED_SRC = `https://api.leadconnectorhq.com/widget/form/${HIGHLEVEL_FORM_ID}`;
 export const HIGHLEVEL_EMBED_SCRIPT_SRC = "https://link.msgsndr.com/js/form_embed.js";
 
-// Confirmed business facts (owner-verified 2026-07-27 — see CONTENT-QUESTIONS.md history).
+// Confirmed business facts (owner-verified 2026-07-27, service radius and
+// subwoofer inclusion revised 2026-08-27 — see CONTENT-QUESTIONS.md history).
 export const BUSINESS_INFO = {
   phone: "(509) 778-6151",
   phoneHref: "tel:+15097786151",
   email: "weddings@merakiaud.com",
   emailHref: "mailto:weddings@merakiaud.com",
-  serviceRadiusMiles: 30,
-  serviceRadiusNote: "within 30 miles of the Tri-Cities",
+  serviceRadiusMiles: 150,
+  serviceRadiusNote: "within 150 miles of the Tri-Cities, throughout Eastern Washington",
   maxGuestCount: 300,
   depositPercent: 20,
   cancellationNoticeDays: 45,
