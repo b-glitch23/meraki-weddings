@@ -28,10 +28,11 @@ export default function Terms() {
               <h2 className="font-display text-xl text-charcoal mb-2">The Service</h2>
               <p>
                 Meraki Weddings provides wedding ceremony audio — microphones, speakers, and music
-                playback — for weddings within 30 miles of the Tri-Cities, WA, up to 300 guests.
-                We support ceremony, and, when your provided order of events calls for it,
-                speeches, cocktail hour, and reception audio at no extra charge beyond our day
-                rate. Larger events can be arranged through Meraki Audio directly.
+                playback — for weddings {BUSINESS_INFO.serviceRadiusNote}, up to{" "}
+                {BUSINESS_INFO.maxGuestCount} guests. We support ceremony, and, when your provided
+                order of events calls for it, speeches, cocktail hour, and reception audio
+                (including subwoofers for reception sound) at no extra charge beyond our day rate.
+                Larger events can be arranged through Meraki Audio directly.
               </p>
             </div>
 
@@ -75,15 +76,17 @@ export default function Terms() {
               <p>
                 We'll make every reasonable effort to deliver your service as planned, including
                 through weather changes. If a last-minute change moves your event outside our
-                normal 30-mile service area, an additional travel fee may apply.
+                standard service area ({BUSINESS_INFO.serviceRadiusNote}), an additional travel
+                fee may apply.
               </p>
             </div>
 
             <div>
               <h2 className="font-display text-xl text-charcoal mb-2">Add-Ons</h2>
               <p>
-                Additional or wireless microphones, subwoofers for dance-floor bass, and rehearsal
-                attendance are all available for an added fee, confirmed at the time of booking.
+                Additional or wireless microphones and rehearsal attendance are available for an
+                added fee, confirmed at the time of booking. Subwoofers for reception sound are
+                included in the day rate, not an add-on.
               </p>
             </div>
 
