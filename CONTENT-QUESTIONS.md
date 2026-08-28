@@ -5,6 +5,33 @@ WeddingCeremonyAudio, OutdoorWeddingAudio, Packages, HowItWorks, FAQ, Contact, F
 QualifierGate, PrivacyPolicy, Terms) and in `src/lib/siteConfig.ts` (`BUSINESS_INFO`). Kept here
 for reference.
 
+## Revised 2026-08-27 (site copy refresh — homepage, packages, comparison section)
+B provided a large new copy draft for the homepage hero, a new "outcome" section, the packages
+page, a Meraki-vs-DJ-vs-Rental comparison section, and the final CTA. Four points in that draft
+conflicted with facts resolved above, and B confirmed each explicitly before anything was changed:
+1. **Pricing:** draft copy named an "$800 day rate" — pricing stays unpublished/quote-only per
+   item 15 above. B confirmed (1): "your right. Lets keep it not published." No dollar figure
+   appears anywhere on the live site; Packages.tsx uses "Priced by quote" language instead.
+2. **Service radius:** widened from 30 miles (item 9 above) to 150 miles, described on-site as
+   "within 150 miles of the Tri-Cities, throughout Eastern Washington." B confirmed (2): "yes
+   thats right." Updated in `BUSINESS_INFO.serviceRadiusMiles` / `serviceRadiusNote` and
+   propagated to Home, Packages, WeddingCeremonyAudio, OutdoorWeddingAudio, FAQ, Terms, and
+   Footer.
+3. **Subwoofers:** moved from a paid add-on (item 13 above) to a standard inclusion ("Subwoofers
+   for reception sound"), with no separate charge. B confirmed (3) this was "Deliberate." Updated
+   in Packages.tsx, WeddingCeremonyAudio.tsx, Terms.tsx (Add-Ons section), and FAQ.tsx.
+4. **Pre-wedding planning call:** added as a new named, confirmed inclusion (not previously listed
+   as its own line item). B confirmed (4): "Yes." Added to Packages.tsx's included list and to
+   HowItWorks.tsx step 2 (renamed "Pre-Wedding Planning Call").
+
+Per B's explicit instruction, this round of updates covers the **website only**. Zola, The Knot,
+and Google Business Profile still reflect the pre-2026-08-27 facts (30-mile radius, subwoofers as
+an add-on) — B is handling those platforms directly and will propagate the updated facts there.
+
+Also worth noting: the new "Outcome" section on the homepage was added *above* the pre-existing
+"The Problem" section rather than replacing it — both are currently live back-to-back. Flagging
+this since it wasn't explicitly specified either way in the draft.
+
 ## Service inclusions — resolved
 1. Two wired microphones always included; more/wireless mics available for a fee.
 2. Microphone type: handheld.
