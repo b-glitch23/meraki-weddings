@@ -4,6 +4,9 @@
 
 export const SITE_URL = "https://weddings.merakiaud.com";
 export const SITE_NAME = "Meraki Weddings";
+export const OG_IMAGE_URL = `${SITE_URL}/og-image.png`;
+export const OG_IMAGE_ALT =
+  "Meraki Weddings — professional wedding ceremony audio without a DJ, Tri-Cities, WA";
 
 export const MERAKIAUD_URL = "https://merakiaud.com";
 export const MERAKIAUD_PORTFOLIO_URL = "https://merakiaud.com/portfolio";
