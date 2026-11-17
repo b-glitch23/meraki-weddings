@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { SITE_NAME, absoluteUrl } from "../lib/siteConfig";
+import { SITE_NAME, OG_IMAGE_URL, OG_IMAGE_ALT, absoluteUrl } from "../lib/siteConfig";
 
 type SEOProps = {
   title: string;
@@ -40,10 +40,16 @@ export default function SEO({ title, description, path, jsonLd }: SEOProps) {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:image" content={OG_IMAGE_URL} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={OG_IMAGE_ALT} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={OG_IMAGE_URL} />
+      <meta name="twitter:image:alt" content={OG_IMAGE_ALT} />
 
       {jsonLd?.map((data, i) => (
         <script key={i} type="application/ld+json">
